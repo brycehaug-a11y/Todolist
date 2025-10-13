@@ -1,0 +1,190 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", system-ui, sans-serif;
+    color: #1C1C1E;
+    background-color: #F9FAFB;
+    line-height: 1.6;
+}
+header {
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #111827;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+
+h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #6B7280;
+  margin-bottom: 1rem;
+}
+
+.ok {
+    color: #22C55E;
+    border-radius: 10px;
+}
+.exit {
+    color: #EF4444;
+    border-radius: 10px;
+
+}
+
+button {
+  border: 2px solid #E5E7EB;
+  background: white;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  border-color: #CBD5E1;
+}
+
+.ok:hover {
+  background-color: #22C55E;
+  color: white;
+}
+
+.exit:hover {
+  background-color: #EF4444;
+  color: white;
+}
+/* Cards End */
+/* Modal Start */
+/* --- Modal Basics --- */
+/* --- Modal Basics --- */
+#modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide when not needed */
+#modal-backdrop[hidden] {
+  display: none;
+}
+
+/* --- Modal Box --- */
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Header --- */
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-head h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* --- Form --- */
+#new-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#new-task-form input,
+#new-task-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#new-task-form input:focus,
+#new-task-form textarea:focus {
+  outline: none;
+  border-color: #666;
+}
+
+/* --- Buttons --- */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.modal-actions .primary {
+  background: black;
+  color: white;
+  border: none;
+}
+label {
+    display: flex;
+    flex-direction: column;
+}
+/* End */

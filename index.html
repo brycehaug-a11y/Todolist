@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <style>
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Todo List</h1>
+        <button><span class="material-symbols-outlined">add</span></button>
+    </header>
+    <!-- Modal -->
+    <div id="modal-backdrop" class="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <header class="modal-head">
+        <h3 id="modal-title">New Task</h3>
+        <button type="button" id="close-modal" class="icon-btn" aria-label="Close">✕</button>
+        </header>
+
+        <form id="new-task-form" autocomplete="off">
+        <label>
+            Title
+            <input id="task-title" name="title" required placeholder="e.g., Buy groceries">
+        </label>
+
+        <label>
+            Description
+            <textarea id="task-desc" name="desc" rows="3" placeholder="Optional details…"></textarea>
+        </label>
+
+        <div class="modal-actions">
+            <button type="button" id="cancel-modal">Cancel</button>
+            <button type="submit" class="primary">Create</button>
+        </div>
+        </form>
+    </div>
+    </div>
+    <!-- Todo Section -->
+    <section class="grid">
+        <!-- Template Card -->
+        <div class="card">
+            <h4>Item 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde quos est deleniti recusandae delectus modi! Tempora magnam aperiam placeat facere temporibus aliquam id tempore, at odit modi obcaecati ab!</p>
+            <div class="cardBtns">
+                <button class="ok btn"><span class="material-symbols-outlined"> check </span></button>
+                <button class="exit btn"><span class="material-symbols-outlined">cancel</span></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
