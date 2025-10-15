@@ -13,13 +13,14 @@
     'GRAD' 0,
     'opsz' 24
     }
-    </style>
+    </style> 
+<script src="./script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <h1>My Todo List</h1>
-        <button><span class="material-symbols-outlined">add</span></button>
+        <button id="addBtn"><span class="material-symbols-outlined">add</span></button>
     </header>
     <!-- Modal -->
     <div id="modal-backdrop" class="modal-backdrop" hidden>
@@ -32,7 +33,7 @@
         <form id="new-task-form" autocomplete="off">
         <label>
             Title
-            <input id="task-title" name="title" required placeholder="e.g., Buy groceries">
+            <input id="insert-title" name="title" required placeholder="e.g., Buy groceries">
         </label>
 
         <label>
@@ -42,22 +43,15 @@
 
         <div class="modal-actions">
             <button type="button" id="cancel-modal">Cancel</button>
-            <button type="submit" class="primary">Create</button>
+            <button type="submit" id="submit-model" class="primary">Create</button>
         </div>
         </form>
     </div>
     </div>
     <!-- Todo Section -->
-    <section class="grid">
+    <section id="todo-section" class="grid">
         <!-- Template Card -->
-        <div class="card">
-            <h4>Item 1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde quos est deleniti recusandae delectus modi! Tempora magnam aperiam placeat facere temporibus aliquam id tempore, at odit modi obcaecati ab!</p>
-            <div class="cardBtns">
-                <button class="ok btn"><span class="material-symbols-outlined"> check </span></button>
-                <button class="exit btn"><span class="material-symbols-outlined">cancel</span></button>
-            </div>
-        </div>
+        
     </section>
 </body>
 </html>
